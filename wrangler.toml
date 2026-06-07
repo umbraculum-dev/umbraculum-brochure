@@ -2,7 +2,7 @@
 # Project name in the dashboard MUST match `name` below.
 # Deploy: npx wrangler deploy
 
-name = "umbraculum-brochure"
+name = "umbraculum-dev-website"
 compatibility_date = "2026-05-30"
 
 [assets]

@@ -6,7 +6,7 @@
 
 Static marketing brochure for **umbraculum.dev** — workspace-shaped positioning for the July 2026 public alpha.
 
-Deploy target: **Cloudflare Workers** (static assets via Wrangler; Git-connected Builds). Worker name: `umbraculum-dev-website`. Preview: https://umbraculum-dev-website.umbraculum-dev.workers.dev
+Deploy target: **Cloudflare Workers** (static assets via Wrangler; Git-connected Builds). Worker name: `umbraculum-brochure`. Preview: https://umbraculum-brochure.umbraculum-dev.workers.dev
 
 ## What this is
 
@@ -42,7 +42,7 @@ Cloudflare **Workers Builds** — connect this repo (`umbraculum-dev/umbraculum-
 
 | Dashboard field | Value |
 |-----------------|--------|
-| Project name | `umbraculum-dev-website` (must match [`wrangler.toml`](wrangler.toml) `name`) |
+| Project name | `umbraculum-brochure` (must match [`wrangler.toml`](wrangler.toml) `name`) |
 | Production branch | `main` |
 | Build command | `npm ci && npm run build` |
 | Deploy command | `npx wrangler deploy` |

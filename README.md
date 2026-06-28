@@ -2,9 +2,9 @@
 
 > **Not the Umbraculum product app.** Self-hosted / demo UI lives in
 > [umbraculum-dev/apps/web](https://github.com/umbraculum-dev/umbraculum-dev/tree/main/apps/web).
-> This repo is the static **brochure** served at https://umbraculum.dev (pre-flip: noindex).
+> This repo is the static **brochure** served at https://umbraculum.dev (**search-indexable** since public-alpha flip **2026-06-27**).
 
-Static marketing brochure for **umbraculum.dev** — workspace-shaped positioning for the July 2026 public alpha.
+Static marketing brochure for **umbraculum.dev** — workspace-shaped positioning for the **public alpha** (live **2026-06-27**).
 
 Deploy target: **Cloudflare Workers** (static assets via Wrangler; Git-connected Builds). Worker name: `umbraculum-brochure`. Preview: https://umbraculum-brochure.umbraculum-dev.workers.dev
 
@@ -49,11 +49,11 @@ Cloudflare **Workers Builds** — connect this repo (`umbraculum-dev/umbraculum-
 | Root directory | `/` |
 | `NODE_VERSION` | `20` |
 
-Static assets: [`wrangler.toml`](wrangler.toml) (`[assets] directory = "./dist"`). Remove `robots.txt` disallow and `noindex` meta at public-alpha flip (see umbraculum-dev flip-day runbook §3.1 — paths now in this repo `public/`).
+Static assets: [`wrangler.toml`](wrangler.toml) (`[assets] directory = "./dist"`). **SEO gates removed 2026-06-27** — `robots.txt` allow-all; no `noindex` meta (umbraculum-dev flip-day runbook §3.1).
 
 ## Scope
 
-- **Contains:** static brochure, `noindex` until flip, links to docs + GitHub.
+- **Contains:** static brochure, links to docs + GitHub + support — **indexed** since public-alpha flip.
 - **Does not contain:** product app (`apps/web`), API, or docs content (`docs-site/` in umbraculum-dev).
 
 ## Further reading (umbraculum-dev)
